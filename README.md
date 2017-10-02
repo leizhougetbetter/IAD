@@ -4,7 +4,7 @@ This software performs the simulations for the paper: **Individualized aspiratio
 
 ## Included files
 
-#### Monte Carlo Simulations
+#### Monte Carlo simulations
 - *Control.f90*: The main program of the Monte Carlo simulation used in Figure 2. It defines all the global variables and reads all the input parameters except the static network strucutre. 
 
 - *frequencyCalculation.f90*: Caculate the distribution of strategy A when the system reaches its stationary states.
@@ -47,21 +47,18 @@ This software performs the simulations for the paper: **Individualized aspiratio
 
 ## Dependencies
 
-Fortran 90 files for **Monte Carlo Simulations** was tested using *Intel(R) Visual Fortran* version 13.0.3600.2010 and IMSL Fortran Numerical Library version 6.0. To use the random number generator, the IMSL static library is needed, in particular the dynamical library *libiomp5md.lib*. 
+Fortran 90 files for **Monte Carlo simulations** was tested using *Intel(R) Visual Fortran* version 13.0.3600.2010 and IMSL Fortran Numerical Library version 6.0. To use the random number generator, the IMSL static library is needed, in particular the dynamical library *libiomp5md.lib*. 
 
-Matlab files for **Aspiration generating** was created with *Matlab 2016b*.
+Matlab files for **Aspiration generating** and **Average abundance plot** was created with *Matlab 2016b*.
 
 
 ## Running the software
 
-All the files of **Monte Carlo simulation** should be put in the same folder. 
+All the files of **Monte Carlo simulations** should be put in the same folder. 
 
 The default parameter setting is for population size 100 with group size 3 on the regular graph. To change the network type to random graph or scale-free network, change the first setence *networkType = RRG* to  *networkType = RG* or *networkType = SF* in the **OtherParameters.inp** file.
 
 The program will generate a series of output files named *numA_Dist_a0_X* (X is the current value of $a_0$). In this file, each row is the stationary distriubtion of the number of strategy A in each repetition of the simulations. Then use **avgAbundance_a_0.m** to plot the average abundance of strategy A as a function as the payoff entry $a_0$ for a single model setting.
-
-## Tests
-
 
 
 ## License
