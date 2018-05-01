@@ -2,7 +2,7 @@ clear
 clc
 
 %% number of random numbers
-numRand = 100;
+numRand = 1000;
 %% Uniform distribution [0,bUnif]
 bUnif = 5;
 randUniform = rand(numRand, 1) * bUnif;
