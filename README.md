@@ -39,6 +39,10 @@ This software performs the simulations for the paper: **Robust individualized as
 #### Average abundance plot
 - *avgAbundance_a_0.m*: Matlab code for plotting the average abundance of strategy A as a function of the payoff entry $a_0$ for a single model setting.
 
+- *averageAbundanceA_beta.m*: Matlab code for plotting the average abundance of strategy A as a function of the selection intensity $\beta$ for two sets of aspirations.
+
+Please see the **Examples** folder to replicate the upper-left panels of Figure 1 and average abundance of strategy A with power-law distributed aspirations on scale-free networks. 
+
 #### Others
 - *LICENSE*: MIT License
 
@@ -58,8 +62,9 @@ All the files of **Monte Carlo simulations** should be put in the same folder. F
 
 The default parameter setting is for population size 100 with group size 3 on the regular graph. To change the network type to random graph or scale-free network, change the first setence *networkType = RRG* to  *networkType = RG* or *networkType = SF* in the **OtherParameters.inp** file.
 
-The program will generate a series of output files named *numA_Dist_a0_X* (X is the current value of $a_0$). In this file, each row is the stationary distriubtion of the number of strategy A in each repetition of the simulations. Then use **avgAbundance_a_0.m** to plot the average abundance of strategy A as a function as the payoff entry $a_0$ for a single model setting.
+The program for Figure 1&2 generates a series of output files named *numA_Strategy_Dist*. In this file, each row corresponds to a distriubtion of the number of strategy A recorded in the simulation. Varying the value of $\beta$ and then use **avgAbundance_beta.m** to plot the average abundance of strategy A as a function as the selection intensity $\beta$ for a single model setting.
 
+The program for Figure 3 will output *numA_Strategy_Dist_repeat_X* (X is the index of repetition). In these files, the distriubtion of the number of strategy A is recorded. Varying the value of $a_0$ and then use **avgAbundance_a_0.m** to plot the average abundance of strategy A as a function as the payoff entry $a_0$ for a single model setting.
 
 ## License
 
