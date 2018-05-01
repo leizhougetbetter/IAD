@@ -1,0 +1,8 @@
+&keyParameters
+
+payoffCollectType = 0,
+generationNum = 500000,
+timesRepeated = 20,
+initialFrequencyA = 0.05,
+
+/
