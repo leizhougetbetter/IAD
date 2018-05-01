@@ -4,7 +4,7 @@ This software performs the simulations for the paper: **Robust individualized as
 
 ## Included files
 
-#### Monte Carlo simulations
+#### Monte Carlo simulations (see the code in each folders)
 - *Control.f90*: The main program of the Monte Carlo simulation used in the paper. It defines all the global variables and reads all the input parameters except the static network strucutre. 
 
 - *frequencyCalculation.f90*: Caculate the distribution of strategy A when the system reaches its stationary states.
