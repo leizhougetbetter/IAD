@@ -1,11 +1,11 @@
 ## Introduction
 
-This software performs the simulations for the paper: **Individualized aspiration dynamics: Calculation by proofs**, by *Bin Wu* and *Lei Zhou*.
+This software performs the simulations for the paper: **Robust individualized aspiration dynamics**, by *Bin Wu* and *Lei Zhou*.
 
 ## Included files
 
 #### Monte Carlo simulations
-- *Control.f90*: The main program of the Monte Carlo simulation used in Figure 2. It defines all the global variables and reads all the input parameters except the static network strucutre. 
+- *Control.f90*: The main program of the Monte Carlo simulation used in the paper. It defines all the global variables and reads all the input parameters except the static network strucutre. 
 
 - *frequencyCalculation.f90*: Caculate the distribution of strategy A when the system reaches its stationary states.
 
@@ -13,7 +13,7 @@ This software performs the simulations for the paper: **Individualized aspiratio
 
 - *readNetwork.f90*: Read the static network structure.
 
-- *PGG_OnlyFocalNode_AnyGraph.f90*: Calculate the payoff of the individual who is randomly selected to update its strategy.
+- *PGG_OnlyFocalNode_AnyGraph_New.f90*: Calculate the payoff of the individual who is randomly selected to update its strategy.
 
 - *AspirationUpdate.f90*: The randomly selected individual compares its aspiration with its payoff and updates its strategy based on the aspiration updating.
 
@@ -21,7 +21,7 @@ This software performs the simulations for the paper: **Individualized aspiratio
 
 - *AspirationDynamicsParameters.txt*: The parameter file contains the group size, payoff matrix, personal aspiration values and selection intensity.
 
-- *OtherParameters.inp*: Another parameter file contains the type of the network (random, regular, or scale-free), the starting point, increment, and ending point of the payoff entry $a_0$, number of repetitions in the whole simulation, and the initial frequency of strategy A.
+- *yParameters.inp*: Another parameter file contains the type of the network (random, regular, or scale-free), the starting point, increment, and ending point of the payoff entry $a_0$, number of repetitions in the whole simulation, and the initial frequency of strategy A.
 
 - *NetworkStructure_AspDyn_RG*: Network structure of the random graph with size 100. Each node corresponds to 2 rows. For example, the No. $i$ node corresponds to Row $2i-1$ and $2i$: Row $2i-1$ defines its degree; Row $2i$ defines the index of all its neighbors. 
 
@@ -54,7 +54,7 @@ Matlab files for **Aspiration generating** and **Average abundance plot** was cr
 
 ## Running the software
 
-All the files of **Monte Carlo simulations** should be put in the same folder. 
+All the files of **Monte Carlo simulations** should be put in the same folder. For convenience, all the code needed for Figure 1&2 and Figure 3 are already seperated in different folders. In addition, this README file apples to both cases. 
 
 The default parameter setting is for population size 100 with group size 3 on the regular graph. To change the network type to random graph or scale-free network, change the first setence *networkType = RRG* to  *networkType = RG* or *networkType = SF* in the **OtherParameters.inp** file.
 
