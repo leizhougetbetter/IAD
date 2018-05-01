@@ -41,7 +41,7 @@ This software performs the simulations for the paper: **Robust individualized as
 
 - *averageAbundanceA_beta.m*: Matlab code for plotting the average abundance of strategy A as a function of the selection intensity $\beta$ for two sets of aspirations.
 
-Please see the **Examples** folder to replicate the upper-left panels of Figure 1 and average abundance of strategy A with power-law distributed aspirations on scale-free networks. 
+Please see the **Examples** folder to replicate the upper-left panels of Figure 1 and average abundance of strategy A with power-law distributed aspirations on scale-free networks in Figure 3. 
 
 #### Others
 - *LICENSE*: MIT License
