@@ -1,0 +1,10 @@
+&keyParameters
+
+networkType = SF, 
+a0Beg = 1.6,
+a0End = 1.7,
+a0Gap = 0.2,
+timesRepeated = 3,
+initialFrequencyA = 0.45,
+
+/
