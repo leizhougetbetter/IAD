@@ -1,6 +1,6 @@
 ## Introduction
 
-This software performs the simulations for the paper: **Robust individualized aspiration dynamics**, by *Bin Wu* and *Lei Zhou*.
+This software performs the simulations for the paper: **Individualized aspiration dynamics: Calculation by proofs**, by *Bin Wu* and *Lei Zhou*.
 
 ## Included files
 
