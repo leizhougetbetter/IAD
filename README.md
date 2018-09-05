@@ -58,7 +58,7 @@ Matlab files for **Aspiration generating** and **Average abundance plot** was cr
 
 ## Running the software
 
-All the files of **Monte Carlo simulations** should be put in the same folder. For convenience, all the code needed for Figure 1&2 and Figure 3 are already seperated in different folders. In addition, this README file apples to both cases. 
+All the files of **Monte Carlo simulations** should be put in the same folder. For convenience, all the code needed for Figure 1&3 and Figure 2 are already seperated in different folders. In addition, this README file apples to both cases. 
 
 The default parameter setting is for population size 100 with group size 3 on the regular graph. To change the network type to random graph or scale-free network, change the first setence *networkType = RRG* to  *networkType = RG* or *networkType = SF* in the **OtherParameters.inp** file.
 
