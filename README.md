@@ -62,9 +62,9 @@ All the files of **Monte Carlo simulations** should be put in the same folder. F
 
 The default parameter setting is for population size 100 with group size 3 on the regular graph. To change the network type to random graph or scale-free network, change the first setence *networkType = RRG* to  *networkType = RG* or *networkType = SF* in the **OtherParameters.inp** file.
 
-The program for Figure 1&2 generates a series of output files named *numA_Strategy_Dist*. In this file, each row corresponds to a distriubtion of the number of strategy A recorded in the simulation. Varying the value of $\beta$ and then use **avgAbundance_beta.m** to plot the average abundance of strategy A as a function as the selection intensity $\beta$ for a single model setting.
+The program for Figure 1&3 generates a series of output files named *numA_Strategy_Dist*. In this file, each row corresponds to a distriubtion of the number of strategy A recorded in the simulation. Varying the value of $\beta$ and then use **avgAbundance_beta.m** to plot the average abundance of strategy A as a function as the selection intensity $\beta$ for a single model setting.
 
-The program for Figure 3 will output *numA_Strategy_Dist_repeat_X* (X is the index of repetition). In these files, the distriubtion of the number of strategy A is recorded. Varying the value of $a_0$ and then use **avgAbundance_a_0.m** to plot the average abundance of strategy A as a function as the payoff entry $a_0$ for a single model setting.
+The program for Figure 2 will output *numA_Strategy_Dist_repeat_X* (X is the index of repetition). In these files, the distriubtion of the number of strategy A is recorded. Varying the value of $a_0$ and then use **avgAbundance_a_0.m** to plot the average abundance of strategy A as a function as the payoff entry $a_0$ for a single model setting.
 
 ## License
 
